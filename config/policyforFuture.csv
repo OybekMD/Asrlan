@@ -1,0 +1,72 @@
+p, unauthorized, /v1/swagger/*, GET
+p, unauthorized, /v1/swagger/index.html, GET
+p, unauthorized, /v1/swagger/index.html, POST
+
+p, unauthorized, /v1/login, POST
+p, unauthorized, /v1/signup, POST
+p, unauthorized, /v1/verify, POST
+p, unauthorized, /v1/forgot, POST
+p, unauthorized, /v1/resetpassword, POST
+
+p, user, /v1/pdfupload, POST
+p, user, /v1/imageupload, POST
+p, user, /v1/soundupload, POST
+p, user, /v1/videoupload, POST
+
+p, user, /v1/dashboard, GET
+p, user, /v1/leaderboard, GET
+
+p, user, /v1/user/:id, GET
+p, user, /v1/user/:id, DELETE
+p, user, /v1/user, PUT
+
+
+p, user, /v1/activity, POST
+
+p, user, /v1/social, PUT
+p, user, /v1/social/:id, GET
+
+p, admin, /v1/badge/:id, GET
+p, admin, /v1/badge, POST
+p, admin, /v1/badge, PUT
+p, admin, /v1/badge/:id, DELETE
+p, admin, /v1/badges, GET
+
+p, admin, /v1/language/:id, GET
+p, admin, /v1/language, POST
+p, admin, /v1/language, PUT
+p, admin, /v1/language/:id, DELETE
+p, admin, /v1/languages, GET
+p, unauthorized, /v1/languagesforregister, GET
+
+p, admin, /v1/level/:id, GET
+p, admin, /v1/level, POST
+p, admin, /v1/level, PUT
+p, admin, /v1/level/:id, DELETE
+p, admin, /v1/levels, GET
+p, unauthorized, /v1/levelsforregister, GET
+
+p, admin, /v1/topic/:id, GET
+p, admin, /v1/topic, POST
+p, admin, /v1/topic, PUT
+p, admin, /v1/topic/:id, DELETE
+p, admin, /v1/topics, GET
+
+p, admin, /v1/lesson/:id, GET
+p, admin, /v1/lesson, POST
+p, admin, /v1/lesson, PUT
+p, admin, /v1/lesson/:id, DELETE
+p, admin, /v1/lessons, GET
+
+p, admin, /v1/content/:id, GET
+p, admin, /v1/content, POST
+p, admin, /v1/content, PUT
+p, admin, /v1/content/:id, DELETE
+p, admin, /v1/contents, GET
+p, user, /v1/contents, GET
+
+p, admin, /v1/contentfile/:id, GET
+p, admin, /v1/contentfile, POST
+p, admin, /v1/contentfile/:id, DELETE
+
+p, unauthorized, /v1/token/{refresh}, GET
